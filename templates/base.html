@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Student Management System</title>
+
+<style>
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(120deg,#74ebd5,#ACB6E5);
+margin:0;
+padding:0;
+}
+
+/* container */
+
+.container{
+width:80%;
+margin:auto;
+margin-top:50px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* heading */
+
+h1{
+text-align:center;
+color:#333;
+margin-bottom:20px;
+}
+
+/* buttons */
+
+button{
+padding:10px 18px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:14px;
+}
+
+.add-btn{
+background:#28a745;
+color:white;
+}
+
+.add-btn:hover{
+background:#218838;
+}
+
+/* table */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table th{
+background:#343a40;
+color:white;
+padding:12px;
+}
+
+table td{
+padding:10px;
+border-bottom:1px solid #ddd;
+}
+
+table tr:hover{
+background:#f1f1f1;
+}
+
+/* delete button */
+
+.delete-btn{
+background:#dc3545;
+color:white;
+padding:6px 12px;
+border-radius:4px;
+text-decoration:none;
+}
+
+.delete-btn:hover{
+background:#c82333;
+}
+
+/* form */
+
+form input{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+form button{
+background:#007bff;
+color:white;
+}
+
+form button:hover{
+background:#0069d9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Student Management System</h1>
+
+{% block content %}
+
+{% endblock %}
+
+</div>
+
+</body>
+</html>

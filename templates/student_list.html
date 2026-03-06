@@ -1,0 +1,43 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<a href="/add/">
+<button class="add-btn">Add Student</button>
+</a>
+
+<br><br>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Course</th>
+<th>Action</th>
+</tr>
+
+{% for s in students %}
+
+<tr>
+
+<td>{{s.name}}</td>
+
+<td>{{s.email}}</td>
+
+<td>{{s.course}}</td>
+
+<td>
+
+<a href="/delete/{{s.id}}" class="delete-btn">Delete</a>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}
